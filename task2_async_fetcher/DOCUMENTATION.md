@@ -1,10 +1,10 @@
-# Task 2 - Async Data Fetcher with Retry (JavaScript) -  Process Notes
+# Task 2 - Async Data Fetcher with Retry (JavaScript) - Process Notes
 
 Notes on how I approached this - searches, structure, etc.
 
 
 
-## 1. What the task asked for
+## 1. What the task asked for (in my words)
 
 - Function that fetches data from a URL
 - Use async/await
@@ -18,7 +18,7 @@ PDF said we can mock the API so I simulated the network instead of hitting a rea
 
 ## 2. Search log
 
-Per the instructions, here are the searches I used:
+Per the instructions, here are the searches I used (with terms and URLs where it made sense):
 
 1. **Sleep with promises**  
    Search: `javascript sleep with promises setTimeout`  
@@ -31,7 +31,7 @@ Per the instructions, here are the searches I used:
    - quick refresher
 
 3. **Retry patterns**  
-   Search: `javascript retry pattern async await loop vs recursion`  
+Search: `javascript retry pattern async await loop vs recursion`  
    - ended up going with loop, easier to follow
 
 4. **Exponential backoff**  
