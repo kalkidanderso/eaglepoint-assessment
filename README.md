@@ -4,7 +4,7 @@ This folder contains my work for the EaglePoint AI Full‑stack Developer techni
 
 ## Project structure
 
-
+```text
 .
 ├── task1_text_analyzer/
 │   ├── text_analyzer.py
@@ -22,12 +22,12 @@ This folder contains my work for the EaglePoint AI Full‑stack Developer techni
 │   └── README.md
 │
 └── README.md  (this file)
-
+```
 
 Each task folder has:
 - the main implementation file,
 - a short `README.md` explaining how to run it,
-- and `DOCUMENTATION.md` with my process notes (searches, decisions, and issues I ran into)
+- and `DOCUMENTATION.md` with my process notes (searches, decisions, and issues I ran into).
 
 ## Tasks
 
@@ -41,8 +41,10 @@ Each task folder has:
 - Implemented in plain Python, no external libraries.
 - To try it quickly:
 
+```bash
 cd task1_text_analyzer
 python3 text_analyzer.py
+```
 
 
 ### Task 2 - Async data fetcher with retry (JavaScript)
@@ -54,10 +56,10 @@ python3 text_analyzer.py
 - There is also a version with exponential backoff.
 - To run the demo/tests:
 
-
-
+```bash
 cd task2_async_fetcher
 node async_fetcher.js
+```
 
 
 ### Task 3 - Rate limiter (Python)
@@ -67,8 +69,10 @@ node async_fetcher.js
 - Includes a small demo and some basic tests.
 - To run:
 
+```bash
 cd task3_rate_limiter
 python3 rate_limiter.py
+```
 
 
 ## Notes on documentation
@@ -78,4 +82,4 @@ The assessment email asks to document:
 - thought process and alternatives,
 - step‑by‑step how the solution was built.
 
-For each task I put that information in the corresponding `DOCUMENTATION.md` file, written more like working notes than a formal report
+For each task I put that information in the corresponding `DOCUMENTATION.md` file, written more like working notes than a formal report.
