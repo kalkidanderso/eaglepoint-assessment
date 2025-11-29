@@ -1,6 +1,6 @@
 # Task 1 - Smart Text Analyzer (Python) - Process Notes
 
-Used Python for this, tried to keep it simple. These are basically my working notes - what I searched, how I built it, issues I ran into etc
+Used Python for this, tried to keep it simple. These are basically my working notes - what I searched, how I built it, issues I ran into, etc.
 
 
 
@@ -18,7 +18,7 @@ Decided to wrap everything in a single function that returns a dictionary since 
 
 ## 2. Search log (Google / docs / Stack Overflow)
 
-as per the instructions in the email, here are the main searches I did while working on this:
+As per the instructions in the email, here are the main searches I did while working on this:
 
 1. **Whitespace splitting in Python**  
    Search: `python split multiple spaces`  
@@ -32,6 +32,7 @@ as per the instructions in the email, here are the main searches I did while wor
 
 3. **Quick sanity check on word frequency patterns**  
 Search: `python count word frequency case insensitive`  
+URL: https://docs.python.org/3/tutorial/datastructures.html#dictionaries  
    - ended up just using dict.get(), simple enough
 
 
@@ -43,7 +44,7 @@ Search: `python count word frequency case insensitive`
 - Keep everything O(n) over number of words - one pass to collect lengths and build frequency map, one pass for longest words
 - Make function handle empty / whitespace‑only strings so it doesnt crash or divide by zero
 
-Considered using `re.findall(r"\w+", text)` to strip punctuation but the assignment example didn't show any punctuation so I stayed with split(). 
+Considered using `re.findall(r"\w+", text)` to strip punctuation but the assignment example didn't show any punctuation so I stayed with `split()`.
 
 
 ## 4. Step‑by‑step implementation
@@ -60,7 +61,7 @@ Considered using `re.findall(r"\w+", text)` to strip punctuation but the assignm
 4. **Average word length**  
    - `sum(len(w) for w in words)` for total
    - divide by word_count, wrap in `round(..., 2)`
-   - kept defensive `if word_count > 0` even tho empty case is handled earlier..
+   - kept defensive `if word_count > 0` even though the empty case is handled earlier
 
 5. **Longest word(s)**  
    - `max_length = max(len(w) for w in words)`

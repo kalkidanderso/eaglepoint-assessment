@@ -1,10 +1,10 @@
 # Task 3 - Rate Limiter (Python) - Process Notes
 
-Notes on how I built this - what I looked up, why I went with sliding window, etc
+Notes on how I built this - what I looked up, why I went with a sliding window, etc.
 
 
 
-## 1. What the task asked for
+## 1. What the task asked for (in my words)
 
 - Enforce 5 requests per 60 seconds per user
 - Identify users by ID
@@ -25,6 +25,7 @@ Main searches I used:
 
 2. **Python deque**  
 Search: `python collections deque example`  
+URL: https://docs.python.org/3/library/collections.html#collections.deque  
    - needed efficient append/pop from both ends
 
 3. **Time handling**  
@@ -34,6 +35,7 @@ Search: `python collections deque example`
 
 4. **HTTP 429 stuff**  
 Search: `http 429 retry-after header meaning`  
+URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429  
    - wanted to return retry_after like real APIs do
 
 
